@@ -1,0 +1,99 @@
+body {
+    
+    background: linear-gradient(to bottom, #2c3b53 50%, #000000 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: 8px solid #585353;
+    border-radius: 50%;
+    background: #000;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: rotate(90deg);
+}
+
+.hour {
+    width: 6px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+}
+
+.minute {
+    width: 4px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+}
+
+.second {
+    width: 2px;
+    height: 120px;
+    background: #00f;
+    border-radius: 50%;
+}
+
+.center-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    color: #fff;
+    column-width: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    font-family: 'Courier New', monospace;
+
+}
+
+.main-number {
+    font-size: 1.4em;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.dot-mark {
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform-origin: center bottom;
+    
+}
+
+#date {
+    padding: 30px;
+    font-size: 1.3em;
+    color: #fff;
+   
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
